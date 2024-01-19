@@ -4,7 +4,7 @@ import Image from "next/image"
 const SearchBar = () => {
     return (
         <div className="flex justify-center">
-            <div className="w-5/6">
+            <div className="w-5/6 invisible sm:visible ">
                 <div className="flex ">
                     <div className="-ml-1 ">
                         <Image alt="ideogram-logo" height={40} width={40} src="/ideogram-logo.png" />
