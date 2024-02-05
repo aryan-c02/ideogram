@@ -4,16 +4,16 @@ import Image from "next/image"
 
 export default function LandingPage() {
     return (
-        <div className="flex items-center justify-center min-h-screen" >
-            <div className="flex flex-col w-4/6 md:w-96 ">
+        <div className="flex items-center justify-center min-h-screen overflow-auto  " >
+            <div className="flex flex-col w-4/6 md:w-96  min-w-60">
                 <div className="flex flex-row justify-between items-center justify-center ">
 
                     <div className="flex justify-between items-center justify-center gap-1 ">
 
-                        <div className="-ml-1 ">
+                        <div className="ml-0 sm:-ml-1 ">
                             <Image alt="ideogram-logo" height={40} width={40} src="/ideogram-logo.png" />
                         </div>
-                        <div className="  font-sans text-2xl font-bold mb-1">
+                        <div className="  font-sans text-base sm:text-2xl font-bold mb-1">
                             Ideogram
                         </div>
                     </div>
@@ -36,7 +36,7 @@ export default function LandingPage() {
                 <div className="">
                     <button type="button" className="text-white flex  justify-center items-center pt-1 pb-1 bg-gray-950 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm  w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
                         <Image alt="google-logo" height={37} width={37} src="/google-icon.png" />
-                        <div className="text-base">
+                        <div className="text-sm sm:text-base">
                             Signup with Google
                         </div>
                     </button>

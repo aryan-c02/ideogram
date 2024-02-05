@@ -28,8 +28,7 @@ export default function ProfilePage() {
         profilePic: "random gebrish",
         likes: 2,
     })
-    const [toggle, setToggle] = useState("All")
-
+    const [toggle, setToggle] = useState<string>("All   ");
     return (
         <div>
             <SubscriptionHeader />
@@ -63,17 +62,17 @@ export default function ProfilePage() {
 
             </div>
 
-            <div className="mt-8 flex flex-row items-center justify-center gap-4">
-                <div onClick={(e) => setToggle("Pinned")} className={"text-sm text-gray-500 font-semibold" +
+            <div className="mt-8 flex flex-row items-center justify-center gap-4 ">
+                <div onClick={(e) => setToggle("Pinned")} className={"text-sm text-gray-500 font-semibold cursor-pointer" +
                     (toggle == "Pinned" ? "" : "")}>
                     Pinned
                 </div>
-                <div onClick={(e) => setToggle("All")} className={"text-sm text-gray-500 font-semibold" +
+                <div onClick={(e) => setToggle("All")} className={"text-sm text-gray-500 font-semibold cursor-pointer" +
                     (toggle == "All" ? "" : "")} >
                     All
                 </div>
-                <div onClick={(e) => setToggle("Liked")} className={"text-sm text-gray-500 font-semibold" +
-                    (toggle == "Liked" ? null : "")}>
+                <div onClick={(e) => setToggle("Liked")} className={"text-sm text-gray-500 font-semibold cursor-pointer" +
+                    (toggle == "Liked" ? "" : "")}>
                     Liked
                 </div>
             </div>
